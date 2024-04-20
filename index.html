@@ -56,6 +56,29 @@
         }
       }
 
+      @media screen and (min-width: 500px) {
+        /* Untuk perangkat berukuran lebih besar dari 768px (misalnya laptop) */
+        .blue-background {
+          width: 50%; /* Mengurangi lebar untuk ukuran layar yang lebih besar */
+        }
+        .text {
+          font-size: 1rem; /* Ukuran teks untuk ukuran layar yang lebih besar */
+        }
+        .myVideo {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+      .gray-container {
+        position: relative; /* Ubah menjadi relative */
+        width: 80%;
+        height: 80%;
+        margin: 40px auto; /* Membuatnya berada di tengah halaman */
+        background-color: rgb(12, 12, 13);
+        border-radius: 10px;
+      }
       @media screen and (min-width: 1024px) {
         /* Untuk iPad dalam mode lanskap dan layar yang lebih besar */
         .blue-background {
