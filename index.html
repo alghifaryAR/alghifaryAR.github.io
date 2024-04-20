@@ -26,7 +26,7 @@
         width: 500px;
         height: 300px;
         margin: 50px auto; /* Membuatnya berada di tengah halaman */
-        background-color: rgb(129, 129, 136);
+        background-color: rgb(152, 152, 161);
         border-radius: 10px;
       }
       .video-container {
@@ -56,13 +56,40 @@
         }
       }
 
-      @media screen and (min-width: 390px) {
+      @media screen and (min-width: 375px) {
         /* Untuk perangkat berukuran lebih besar dari 768px (misalnya laptop) */
         .blue-background {
           width: 50%; /* Mengurangi lebar untuk ukuran layar yang lebih besar */
+          width: 80%;
+          height: 80%;
         }
         .text {
-          font-size: 1rem; /* Ukuran teks untuk ukuran layar yang lebih besar */
+          font-size: 3rem; /* Ukuran teks untuk ukuran layar yang lebih besar */
+        }
+        .myVideo {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+      .gray-container {
+        position: relative; /* Ubah menjadi relative */
+        width: 90%;
+        height: 90%;
+        margin: 40px auto; /* Membuatnya berada di tengah halaman */
+        background-color: rgb(177, 177, 196);
+        border-radius: 10px;
+      }
+      @media screen and (min-width: 414px) {
+        /* Untuk perangkat berukuran lebih besar dari 768px (misalnya laptop) */
+        .blue-background {
+          width: 50%; /* Mengurangi lebar untuk ukuran layar yang lebih besar */
+          width: 90%;
+          height: 70%;
+        }
+        .text {
+          font-size: 3rem; /* Ukuran teks untuk ukuran layar yang lebih besar */
         }
         .myVideo {
           display: block;
@@ -74,10 +101,11 @@
       .gray-container {
         position: relative; /* Ubah menjadi relative */
         width: 80%;
-        height: 80%;
-        margin: 40px auto; /* Membuatnya berada di tengah halaman */
-        background-color: rgb(12, 12, 13);
+        height: 90%;
+        /* Membuatnya berada di tengah halaman */
+        background-color: rgb(15, 15, 15);
         border-radius: 10px;
+        margin-top: 20px;
       }
       @media screen and (min-width: 1024px) {
         /* Untuk iPad dalam mode lanskap dan layar yang lebih besar */
